@@ -1,5 +1,6 @@
 import React from 'react'
-import STORE from '../../store.js'
+import STORE from '../../store'
+import List from '../List/List'
 
 
 function App(props) {
@@ -9,6 +10,10 @@ function App(props) {
       <header class="List-header">
           <h2>First list</h2>
       </header>
+      <List />
+      <List />
+      <List />
+      <List />
     </main>
   );
 }
