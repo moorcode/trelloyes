@@ -1,19 +1,19 @@
-import React from 'react'
-import STORE from '../../store'
-import List from '../List/List'
+import React from "react";
+// import STORE from "../../store";
+import List from "../List/List";
 
-
-function App(props) {
-  props = STORE
+function App() {
   return (
-    <main className='App'>
-      <header class="List-header">
-          <h2>First list</h2>
+    <main className="App">
+      <header class="App-header">
+        <h1>Trelloyes!</h1>
       </header>
-      <List />
-      <List />
-      <List />
-      <List />
+      <div class="App-list">
+        <List />
+        <List />
+        <List />
+        <List />
+      </div>
     </main>
   );
 }
