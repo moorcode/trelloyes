@@ -6,14 +6,13 @@ import List from "../List/List";
 function App() {
   const lists = STORE.lists;
   const listTitleArray = lists.map((item) => 
-  <List listTitle={item.header}/> ) //First List ..
-  console.log(lists)
+  <List listTitle={item.header} /> ) //First List ..
   return (
     <main className="App">
-      <header class="App-header">
+      <header className="App-header">
         <h1>Trelloyes!</h1>
       </header>
-      <div class="App-list">
+      <div className="App-list">
         {listTitleArray}
       </div>
     </main>
